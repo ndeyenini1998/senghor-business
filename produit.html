@@ -1,0 +1,806 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maaasss Business</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <!-- Bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- Fontawesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark position-fixed">
+          <div class="container-fluid">
+            <a class="navbar-brand " href="index.html"><img class="bg-light rounded-circle" src="images/logo.png" alt="logo"
+                width="80" height="70"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-3 mb-lg-0 ">
+                <li class="nav-item">
+                  <a class="nav-link active  text-light" aria-current="page" href="./index.html">Acceuil</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="produit.html">Produits</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Types de produits
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#child">"DRAPS 4 PIECES"</a></li>
+                    <li><a class="dropdown-item" href="#woman">"TROIS RIDEAUX PLUS DRAP velours"</a></li>
+                    <li><a class="dropdown-item" href="#tampon">"DRAP TAMPON"</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#man">"DRAPS 6 PIECES PLUS DEUX RIDEAUX"</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link  text-light" href="./plus-achetés.html">Produit les plus acheté</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link  text-light" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link  text-light" href="./connexion.html">Connexion</a>
+                </li>
+                <!-- <li class="nav-item">
+                                <a class="nav-link text-light" href="./produit.html"><i class="fas fa-shopping-cart"></i></a>
+                            </li> -->
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2 " type="search" placeholder="Recherche..." aria-label="Search">
+                <!-- <button class="btn btn-outline-dark" type="submit">Recherche</button> -->
+                <a class="nav-link text-light pt-2 ms-1" href="./produit.html"><i class="fas fa-shopping-cart"></i></a>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+    <div class="container-fluid prod">
+        <div class="row" id="child" style="padding-top: 130px;">
+            <h1 class="text-center">Collection "DRAPS 4PIECES"</h1>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card" style="width: 90%; margin: 20px;height: 88%;">
+                    <img src="./images/drap23.jpg" class="card-img-top"data-aos="zoom-in-up" style="height: 45%;" data-aos-duration="2500">
+                    <div class="card-body">
+                        <h5 class="card-title">Drap 4 piéces</h5>
+                        <p class="card-text">trés jolie, bien fabriqué et résistant dans le temps.</p>
+                        <p>&#11088 &#11088 &#11088 &#11088 &#11088</p>
+                        <!-- <a href="commande.html" class="btn btn-dark">Acheter</a> -->
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal1">
+                            Acheter
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                                <img src="./images/drap23.jpg" alt="">
+                                            </div>
+                                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                                <h4>Drap 4 piéces</h4>
+                                                <hr>
+                                                <p>à partir de 9 000 F</p>
+                                                
+                                                <p>Livraison en <strong>EXPRESS 48H</strong></p>
+                                                <button type="button" class="btn btn-dark text-center align-item-center">Acheter</button>
+                                                <button type="button" class="btn btn-info"data-bs-dismiss="modal">Annuler</button>
+                                                <hr>                                             
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card" style="width: 90%; margin: 20px;">
+                    <img src="./images/drap14.jpg" class="card-img-top"data-aos="zoom-in-up" style="height: 30%;" data-aos-duration="2500">
+                    <div class="card-body">
+                        <h5 class="card-title">Drap 4 piéces</h5>
+                        <p class="card-text">trés joli, bien fabriqué et résistant dans le temps.</p>
+                        <p>&#11088 &#11088 &#11088 &#11088 &#11088</p>
+                        <!-- <a href="commande.html" class="btn btn-dark">Acheter</a> -->
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal02">
+                            Acheter
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal02" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                                <img src="./images/drap14.jpg" alt="">
+                                            </div>
+                                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                                <h4>Drap 4 piéces</h4>
+                                                <hr>
+                                                <p>à partir de 9 000 F</p>
+                                                
+                                                <p>Livraison en <strong>EXPRESS 48H</strong></p>
+                                                <button type="button" class="btn btn-dark ">Acheter</button>
+                                                <button type="button" class="btn btn-info"data-bs-dismiss="modal">Annuler</button>
+                                                <hr>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card" style="width: 90%; margin: 20px;height: 84%;">
+                    <img src="./images/drap24.jpg" class="card-img-top"data-aos="zoom-in-up" style="height: 45%;" data-aos-duration="2500">
+                    <div class="card-body">
+                        <h5 class="card-title">Drap 4 pièces</h5>
+                        <p class="card-text">trés joli, bien fabriqué et résistant dans le temps.</p>
+                        <p>&#11088 &#11088 &#11088 &#11088 &#11088</p>
+                        <!-- <a href="commande.html" class="btn btn-dark">Acheter</a> -->
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal3">
+                            Acheter
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                                <img src="./images/drap24.jpg" alt="">
+                                            </div>
+                                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                                <h4>Drap 4 pièces</h4>
+                                                <hr>
+                                                <p>à partir de 9 000 F</p>
+                                                <p>Livraison en <strong>EXPRESS 48H</strong></p>
+                                                <button type="button" class="btn btn-dark ">Acheter</button>
+                                                <button type="button" class="btn btn-info"data-bs-dismiss="modal">Annuler</button>
+                                                <hr>
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card" style="width: 90%; margin: 20px;height: 84%;">
+                    <img src="./images/drap25.jpg" class="card-img-top"data-aos="zoom-in-up" style="height: 45%;" data-aos-duration="2500">
+                    <div class="card-body">
+                        <h5 class="card-title">Drap 4 pièces</h5>
+                        <p class="card-text">trés joli, bien fabriqué et résistant dans le temps.</p>
+                        <p>&#11088 &#11088 &#11088 &#11088 &#11088</p>
+                        <!-- <a href="commande.html" class="btn btn-dark">Acheter</a> -->
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal4">
+                            Acheter
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                                <img src="./images/drap25.jpg" alt="">
+                                            </div>
+                                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                                <h4>Drap 4 pièces</h4>
+                                                <hr>
+                                                <p>à partir de 9000 F</p>
+                                                <p>Livraison en <strong>EXPRESS 48H</strong></p>
+                                                <button type="button" class="btn btn-dark">Acheter</button>
+                                                <button type="button" class="btn btn-info"data-bs-dismiss="modal">Annuler</button>
+                                                <hr>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <div class="row " id="woman">
+            <h1 class="text-center mt-5">Collection "DRAP AVEC RIDEAUX"</h1>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card" style="width: 90%; margin: 20px;height: 84%;">
+                    <img src="./images/drap6.jpg"
+                        class="card-img-top"data-aos="zoom-in-up" style="height: 45%;" data-aos-duration="2500">
+                    <div class="card-body">
+                        <h5 class="card-title">3 rideaux plus drap velours</h5>
+                        <p class="card-text"> bien fabriqué et résistant dans le temps.</p>
+                        <p>&#11088 &#11088 &#11088 &#11088</p>
+                        <!-- <a href="commande.html" class="btn btn-dark">Acheter</a> -->
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal5">
+                            Acheter
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                                <img src="images/drap6.jpg" alt="">
+                                            </div>
+                                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                                <h4>3 rideaux plus drap velours</h4>
+                                                <hr>
+                                                <p>à partir de 19500 F</p>
+                                                <p>Livraison en <strong>EXPRESS 48H</strong></p>
+                                                <button type="button" class="btn btn-dark">Acheter</button>
+                                                <button type="button" class="btn btn-info"data-bs-dismiss="modal">Annuler</button>
+                                                <hr>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card" style="width: 90%; margin: 20px;height: 84%;">
+                    <img src="images/rideau6.jpg" class="card-img-top"data-aos="zoom-in-up"style="height: 45%;" data-aos-duration="2500">
+                    <div class="card-body">
+                        <h5 class="card-title">3 rideaux plus drap velours</h5>
+                        <p class="card-text"> bien fabriqué et résistant dans le temps.</p>
+                        <p>&#11088 &#11088 &#11088 &#11088</p>
+                        <!-- <a href="commande.html" class="btn btn-dark">Acheter</a> -->
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal6">
+                            Acheter
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                                <img src="images/rideau6.jpg" alt="">
+                                            </div>
+                                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                                <h4>3 rideaux plus drap velours</h4>
+                                                <hr>
+                                                <p>à partir de 19500 F</p>
+                                                <p>Livraison en <strong>EXPRESS 48H</strong></p>
+                                                <button type="button" class="btn btn-dark">Acheter</button>
+                                                <button type="button" class="btn btn-info"data-bs-dismiss="modal">Annuler</button>
+                                                <hr>                                              
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card" style="width: 90%; margin: 20px;height: 84%;">
+                    <img src="images/drap26.jpg " class="card-img-top h-50"data-aos="zoom-in-up" style="height: 45%;" data-aos-duration="2500">
+                    <div class="card-body">
+                        <h5 class="card-title">3 rideaux plus drap velours</h5>
+                        <p class="card-text">Élégant, bien fabriqué et résistant dans le temps.</p>
+                        <p>&#11088 &#11088 &#11088 &#11088</p>
+                        <!-- <a href="commande.html" class="btn btn-dark">Acheter</a> -->
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal7">
+                            Acheter
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                                <img src="images/drap26.jpg" alt="">
+                                            </div>
+                                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                                <h4>3 rideaux plus drap velours</h4>
+                                                <hr>
+                                                <p>à partir de 19500 F</p>
+                                                <p>Livraison en <strong>EXPRESS 48H</strong></p>
+                                                <button type="button" class="btn btn-dark">Acheter</button>
+                                                <button type="button" class="btn btn-info"data-bs-dismiss="modal">Annuler</button>
+                                                <hr>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card" style="width: 90%; margin: 20px;height: 84%;">
+                    <img src="images/drap30.jpg" class="card-img-top h-50"data-aos="zoom-in-up" style="height: 45%;" data-aos-duration="2500">
+                    <div class="card-body">
+                        <h5 class="card-title">3 rideaux plus drap velours </h5>
+                        <p class="card-text">Élégant, bien fabriqué et résistant dans le temps.</p>
+                        <p>&#11088 &#11088 &#11088 &#11088</p>
+                        <!-- <a href="commande.html" class="btn btn-dark">Acheter</a> -->
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal8">
+                            Acheter
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal8" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                                <img src="images/drap30.jpg" alt="">
+                                            </div>
+                                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                                <h4>3 rideaux plus drap velours </h4>
+                                                <hr>
+                                                <p>à partir de 19500 F</p>
+                                                <p>Livraison en <strong>EXPRESS 48H</strong></p>
+                                                <button type="button" class="btn btn-dark">Acheter</button>
+                                                <button type="button" class="btn btn-info"data-bs-dismiss="modal">Annuler</button>
+                                                <hr>
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row " id="tampon">
+            <h1 class="text-center mt-5">Collection "DRAP TAMPON"</h1>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card" style="width: 90%; margin: 20px;">
+                    <img src="./images/drap16.jpg"
+                        class="card-img-top"data-aos="zoom-in-up" data-aos-duration="2500">
+                    <div class="card-body">
+                        <h5 class="card-title">Drap tampon</h5>
+                        <p class="card-text">Élégant, bien fabriqué et résistant dans le temps.</p>
+                        <p>&#11088 &#11088 &#11088 &#11088</p>
+                        <!-- <a href="commande.html" class="btn btn-dark">Acheter</a> -->
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal15">
+                            Acheter
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal15" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                                <img src="images/drap16.jpg" alt="">
+                                            </div>
+                                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                                <h4>Drap tampon</h4>
+                                                <hr>
+                                                <p>à partir de 90000 F</p>
+                                                <p>Livraison en <strong>EXPRESS 48H</strong></p>
+                                                <button type="button" class="btn btn-dark">Acheter</button>
+                                                <button type="button" class="btn btn-info"data-bs-dismiss="modal">Annuler</button>
+                                                <hr>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card" style="width: 90%; margin: 20px;">
+                    <img src="images/drap20.jpg" class="card-img-top"data-aos="zoom-in-up" data-aos-duration="2500">
+                    <div class="card-body">
+                        <h5 class="card-title">Drap tampon</h5>
+                        <p class="card-text">Élégant, bien fabriqué et résistant dans le temps.</p>
+                        <p>&#11088 &#11088 &#11088 &#11088</p>
+                        <!-- <a href="commande.html" class="btn btn-dark">Acheter</a> -->
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal16">
+                            Acheter
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal16" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                                <img src="images/drap20.jpg" alt="">
+                                            </div>
+                                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                                <h4>Drap tampon</h4>
+                                                <hr>
+                                                <p>à partir de 9000 F</p>
+                                                <p>Livraison en <strong>EXPRESS 48H</strong></p>
+                                                <button type="button" class="btn btn-dark">Acheter</button>
+                                                <button type="button" class="btn btn-info"data-bs-dismiss="modal">Annuler</button>
+                                                <hr>                                              
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card" style="width: 90%; margin: 20px;">
+                    <img src="images/drap10.jpg" class="card-img-top"data-aos="zoom-in-up" data-aos-duration="2500">
+                    <div class="card-body">
+                        <h5 class="card-title">Drap tampon</h5>
+                        <p class="card-text">Élégant, bien fabriqué et résistant dans le temps.</p>
+                        <p>&#11088 &#11088 &#11088 &#11088</p>
+                        <!-- <a href="commande.html" class="btn btn-dark">Acheter</a> -->
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal17">
+                            Acheter
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal17" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                                <img src="images/drap10.jpg" alt="">
+                                            </div>
+                                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                                <h4>Drap tampon</h4>
+                                                <hr>
+                                                <p>à partir de 9000 F</p>
+                                                <p>Livraison en <strong>EXPRESS 48H</strong></p>
+                                                <button type="button" class="btn btn-dark">Acheter</button>
+                                                <button type="button" class="btn btn-info"data-bs-dismiss="modal">Annuler</button>
+                                                <hr>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card" style="width: 90%; margin: 20px;">
+                    <img src="images/drap18.jpg" class="card-img-top"data-aos="zoom-in-up" data-aos-duration="2500">
+                    <div class="card-body">
+                        <h5 class="card-title">Drap tampon </h5>
+                        <p class="card-text">Élégant, bien fabriqué et résistant dans le temps.</p>
+                        <p>&#11088 &#11088 &#11088 &#11088</p>
+                        <!-- <a href="commande.html" class="btn btn-dark">Acheter</a> -->
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal18">
+                            Acheter
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal18" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                                <img src="images/drap18.jpg" alt="">
+                                            </div>
+                                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                                <h4>Drap tampon </h4>
+                                                <hr>
+                                                <p>à partir de 9000 F</p>
+                                                <p>Livraison en <strong>EXPRESS 48H</strong></p>
+                                                <button type="button" class="btn btn-dark">Acheter</button>
+                                                <button type="button" class="btn btn-info"data-bs-dismiss="modal">Annuler</button>
+                                                <hr>
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row" id="man">
+            <h1 class="text-center mt-5">Collection "DRAP 6 PIECES PLUS DEUX RIDEAUX"</h1>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card" style="width: 90%; margin: 20px;height: 70%;">
+                    <img src="images/drap1.jpg" class="card-img-top imag"data-aos="zoom-in-up" data-aos-duration="2500">
+                    <div class="card-body">
+                        <h5 class="card-title">Drap 6 piéeces plus deux rideaux </h5>
+                        <p class="card-text">Élégant, bien fabriqué et résistant dans le temps.</p>
+                        <p>&#11088 &#11088 &#11088 &#11088</p>
+                        <!-- <a href="commande.html" class="btn btn-dark">Acheter</a> -->
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal9">
+                            Acheter
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal9" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                                <img src="images/drap1.jpg" alt="">
+                                            </div>
+                                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                                <h4>Drap 6 piéeces plus deux rideaux</h4>
+                                                <hr>
+                                                <p>à partir de 15000 F</p>
+                                                <p>Livraison en <strong>EXPRESS 48H</strong></p>
+                                                <button type="button" class="btn btn-dark">Acheter</button>
+                                                <button type="button" class="btn btn-info"data-bs-dismiss="modal">Annuler</button>
+                                                <hr>                                              
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card" style="width: 90%; margin: 20px;height: 70%;">
+                    <img src="images/drap2.jpg" class="card-img-top h-50"data-aos="zoom-in-up" data-aos-duration="2500">
+                    <div class="card-body">
+                        <h5 class="card-title">Drap 6 piéeces plus deux rideaux</h5>
+                        <p class="card-text">Élégant, bien fabriqué et résistant dans le temps.</p>
+                        <p>&#11088 &#11088 &#11088 &#11088</p>
+                        <!-- <a href="commande.html" class="btn btn-dark">Acheter</a> -->
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal10">
+                            Acheter
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal10" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                                <img src="images/drap2.jpg" alt="">
+                                            </div>
+                                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                                <h4>Drap 6 piéeces plus deux rideaux</h4>
+                                                <hr>
+                                                <p>à partir de 15000 F</p>
+                                                <p>Livraison en <strong>EXPRESS 48H</strong></p>
+                                                <button type="button" class="btn btn-dark">Acheter</button>
+                                                <button type="button" class="btn btn-info"data-bs-dismiss="modal">Annuler</button>
+                                                <hr>                                              
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card" style="width: 90%; margin: 20px;height: 70%;">
+                    <img src="images/drap5.jpg" class="card-img-top h-50"data-aos="zoom-in-up" data-aos-duration="2500">
+                    <div class="card-body">
+                        <h5 class="card-title">Drap 6 piéeces plus deux rideaux</h5>
+                        <p class="card-text">Élégant, bien fabriqué et résistant dans le temps.</p>
+                        <p>&#11088 &#11088 &#11088 &#11088</p>
+                        <!-- <a href="commande.html" class="btn btn-dark">Acheter</a> -->
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal11">
+                            Acheter
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal11" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                                <img src="images/drap5.jpg" alt="">
+                                            </div>
+                                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                                <h4>Drap 6 piéeces plus deux rideaux</h4>
+                                                <hr>
+                                                <p>à partir de 15000 F</p>
+                                                <p>Livraison en <strong>EXPRESS 48H</strong></p>                                                
+                                                <button type="button" class="btn btn-dark ">Acheter</button>
+                                                <button type="button" class="btn btn-info"data-bs-dismiss="modal">Annuler</button>
+                                                <hr>                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card" style="width: 90%; margin: 20px;height: 70%;">
+                    <img src="images/drap17.jpg" class="card-img-top h-50"data-aos="zoom-in-up" data-aos-duration="2500">
+                    <div class="card-body">
+                        <h5 class="card-title">Baye Sonhibou sans thiaya</h5>
+                        <p class="card-text">Élégant, bien fabriqué et résistant dans le temps.</p>
+                        <p>&#11088 &#11088 &#11088 &#11088</p>
+                        <!-- <a href="commande.html" class="btn btn-dark">Acheter</a> -->
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-dark mt-4" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal12">
+                            Acheter
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal12" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                                <img src="images/drap17.jpg" alt="">
+                                            </div>
+                                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                                <h4>Baye Sonhibou sans thiaya</h4>
+                                                <hr>
+                                                <p>à partir de 20 000 F</p>
+                                                <p>Livraison en <strong>EXPRESS 48H</strong></p>
+                                                <button type="button" class="btn btn-dark">Acheter</button>
+                                                <button type="button" class="btn btn-info"data-bs-dismiss="modal">Annuler</button>
+                                                <hr>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="container-fluid bg-dark text-white footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <ul class="list-unstyled d-flex">
+                        <li>
+                            <a href="nouvel-arrivage.html"><i class="fab fa-instagram text-white"></i></a>
+                        </li>
+                        <li>
+                            <a href="nouvel-arrivage.html"><i class="fab fa-twitter text-white"></i></a>
+                        </li>
+                        <li>
+                            <a href="nouvel-arrivage.html"><i class="fab fa-facebook text-white"></i></a>
+                        </li>  
+                    </ul>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="copyright-text text-center mb-3 mb-lg-0">
+                        <p class="mb-0 ">Copyright &copy; 2023 <a class="text-white"
+                            href="index.html">Massaer</a>.
+                            Tous droits
+                            réservés.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+        <script>
+            AOS.init();
+        </script>
+</body>
+
+</html>

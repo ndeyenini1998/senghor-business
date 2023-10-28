@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maass Business</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <!-- Bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- Fontawesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark position-fixed">
+            <div class="container-fluid">
+                <a class="navbar-brand " href="index.html"><img class="bg-light rounded-circle" src="images/logo.png"
+                        alt="logo" width="80" height="70"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-3 mb-lg-0 ">
+                        <li class="nav-item">
+                            <a class="nav-link active  text-light" aria-current="page" href="./index.html">Acceuil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="produit.html">Produits</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-light" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Types de produits
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./produit.html">"DRAP 3 PIECES"</a></li>
+                                <li><a class="dropdown-item" href="./produit.html">"trois rideaux plus drap velours"</a></li>
+                                <li><a class="dropdown-item" href="./produit.html">"DRAP TAMPON"</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="./produit.html">"DRAP 6 PIECES PLUS DEUX RIDEAUX"</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  text-light" href="./plus-achetés.html"> Les Produits les plus acheté</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  text-light" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  text-light" href="./connexion.html">Connexion</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                                <a class="nav-link text-light" href="./produit.html"><i class="fas fa-shopping-cart"></i></a>
+                            </li> -->
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2 " type="search" placeholder="Recherche..." aria-label="Search">
+                        <!-- <button class="btn btn-outline-dark" type="submit">Recherche</button> -->
+                        <a class="nav-link text-light pt-2 ms-1" href="./produit.html"><i
+                                class="fas fa-shopping-cart"></i></a>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="container-fluid plus-achetés">
+        <div class="container mt-5">
+            <div class="row" style="padding-top: 100px;">
+                <div class="col-lg-3 col-md-4 col-sm-12">
+                    <div class="card" style="width: 90%;">
+                        <img src="images/drap28.jpg" class="card-img-top"data-aos="zoom-in-up" data-aos-duration="2500">
+                        <div class="card-body">
+                            <h5 class="card-title">Deux draps plus deux rideau</h5>
+                            <p class="card-text">Coton pure</p>
+                            <p>&#11088 &#11088 &#11088 &#11088 &#11088</p>
+                            <!-- <a href="#" class="btn btn-dark">Acheter</a> -->
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal1">
+                                Acheter
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <div class="col-lg-6 col-md-12 col-sm-12">
+                                                    <img src="images/drap28.jpg" alt="">
+                                                </div>
+                                                <div class="col-lg-6 col-md-12 col-sm-12">
+                                                    <h4>Deux draps plus deux rideau</h4>
+                                                    <hr>
+                                                    <p>à partir de 15000 F</p>
+                                                    <p>Livraison en <strong>EXPRESS 48H</strong></p>
+                                                    <button type="button" class="btn btn-dark">Acheter</button>
+                                                    <button type="button" class="btn btn-dark"
+                                                        data-bs-dismiss="modal">Annuler</button>
+                                                    <hr>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-12">
+                    <div class="card" style="width: 90%;">
+                        <img src="images/drap27.jpg" class="card-img-top"data-aos="zoom-in-up" data-aos-duration="2500">
+                        <div class="card-body">
+                            <h5 class="card-title">Deux draps plus deux rideau</h5>
+                            <p class="card-text">Coton pure</p>
+                            <p>&#11088 &#11088 &#11088 &#11088</p>
+                            <!-- <a href="#" class="btn btn-dark">Acheter</a> -->
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal2">
+                                Acheter
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <div class="col-lg-6 col-md-12 col-sm-12">
+                                                    <img src="images/drap27.jpg" alt="">
+                                                </div>
+                                                <div class="col-lg-6 col-md-12 col-sm-12">
+                                                    <h4>Deux draps plus deux rideau</h4>
+                                                    <hr>
+                                                    <p>à partir de 15 000 F</p>
+                                                    <p>Livraison en <strong>EXPRESS 48H</strong></p>
+                                                    <button type="button" class="btn btn-dark">Acheter</button>
+                                                    <button type="button" class="btn btn-dark"
+                                                        data-bs-dismiss="modal">Annuler</button>
+                                                    <hr>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-12">
+                    <div class="card" style="width: 90%;">
+                        <img src="images/drap29.jpg" class="card-img-top"data-aos="zoom-in-up" data-aos-duration="2500">
+                        <div class="card-body">
+                            <h5 class="card-title">Deux draps plus deux rideau</h5>
+                            <p class="card-text">Coton pure</p>
+                            <p>&#11088 &#11088 &#11088 </p>
+                            <!-- <a href="#" class="btn btn-dark">Acheter</a> -->
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal3">
+                                Acheter
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <div class="col-lg-6 col-md-12 col-sm-12">
+                                                    <img src="images/drap29.jpg" alt="">
+                                                </div>
+                                                <div class="col-lg-6 col-md-12 col-sm-12">
+                                                    <h4>Deux draps plus deux rideau</h4>
+                                                    <hr>
+                                                    <p>à partir de 15 000 F</p>
+                                                    <p>Livraison en <strong>EXPRESS 48H</strong></p>
+                                                    <button type="button" class="btn btn-dark">Acheter</button>
+                                                    <button type="button" class="btn btn-dark"
+                                                        data-bs-dismiss="modal">Annuler</button>
+                                                    <hr>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-12">
+                    <div class="card" style="width: 90%;">
+                        <img src="images/drap8.jpg" class="card-img-top"data-aos="zoom-in-up" data-aos-duration="2500">
+                        <div class="card-body">
+                            <h5 class="card-title">Deux draps plus deux rideau</h5>
+                            <p class="card-text">Coton pure</p>
+                            <p>&#11088 &#11088 </p>
+                            <!-- <a href="#" class="btn btn-dark">Acheter</a> -->
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal4">
+                                Acheter
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <div class="col-lg-6 col-md-12 col-sm-12">
+                                                    <img src="images/drap8.jpg" alt="">
+                                                </div>
+                                                <div class="col-lg-6 col-md-12 col-sm-12">
+                                                    <h4>Deux draps plus deux rideau</h4>
+                                                    <hr>
+                                                    <p>à partir de 15 000 F</p>
+                                                    <p>Livraison en <strong>EXPRESS 48H</strong></p>
+                                                    <button type="button" class="btn btn-dark">Acheter</button>
+                                                    <button type="button" class="btn btn-dark"
+                                                        data-bs-dismiss="modal">Annuler</button>
+                                                    <hr>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section 11 -->
+    <section class="container-fluid plus">
+        <div class="container my-5">
+        <div class="row" style="padding-top: 50px;">
+            <div class="col-lg-3 col-md-4 col-sm-12">
+                <div class="card" style="width: 90%;height: 90%;">
+                    <img src="images/rideau1.jpg" class="card-img-top" style="height: 50%;" data-aos="zoom-in-up"
+                    data-aos-duration="2500">
+                    <div class="card-body">
+                        <h5 class="card-title"> trois rideaux</h5>
+                        <p class="card-text">Des rideaux de qualite</p>
+                        <p class="mt-5">&#11088 &#11088 &#11088 &#11088 &#11088</p>
+                        <!-- <a href="#" class="btn btn-dark">Acheter</a> -->
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-dark mt-4" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal18">
+                            Acheter
+                        </button>
+    
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal18" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                                <img src="images/rideau1.jpg" alt="">
+                                            </div>
+                                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                                <h4>Deux draps plus 4 orielles avec deux rideaux</h4>
+                                                <hr>
+                                                <p>à partir de 12500 F</p>
+                                                <p>Livraison en <strong>EXPRESS 48H</strong></p>
+                                                <button type="button" class="btn btn-dark">Acheter</button>
+                                                <button type="button" class="btn btn-dark"data-bs-dismiss="modal">Annuler</button>
+                                                <hr>                                              
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-12">
+                <div class="card" style="width: 90%;height: 90%">
+                    <img src="images/rose.jpg" class="card-img-top" style="height: 50%;" data-aos="zoom-in-up"
+                    data-aos-duration="2500">
+                    <div class="card-body">
+                        <h5 class="card-title">Trois rideaux </h5>
+                        <p class="card-text">Des rideaux de qualite</p>
+                        <p class="mt-5">&#11088 &#11088 &#11088 &#11088</p>
+                        <!-- <a href="#" class="btn btn-dark">Acheter</a> -->
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-dark mt-4" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal10">
+                            Acheter
+                        </button>
+    
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal10" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                                <img src="images/rose.jpg" alt="">
+                                            </div>
+                                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                                <h4>trois rideau</h4>
+                                                <hr>
+                                                <p>à partir de 12500</p>
+                                                <p>Livraison en <strong>EXPRESS 48H</strong></p>
+                                                <button type="button" class="btn btn-dark">Acheter</button>
+                                                <button type="button" class="btn btn-dark"data-bs-dismiss="modal">Annuler</button>
+                                                <hr>                                             
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-12">
+                <div class="card" style="width: 90%;height: 90%;">
+                    <img src="images/rideau3.jpg" class="card-img-top" style="height: 50%;" data-aos="zoom-in-up"
+                    data-aos-duration="2500">
+                    <div class="card-body">
+                        <h5 class="card-title">Trois rideaux </h5>
+                        <p class="card-text">Des rideaux de qualite</p>
+                        <p class="mt-4">&#11088 &#11088 &#11088 </p>
+                        <!-- <a href="#" class="btn btn-dark">Acheter</a> -->
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-dark mt-5" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal15">
+                            Acheter
+                        </button>
+    
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal15" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                                <img src="images/rideau3.jpg" alt="">
+                                            </div>
+                                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                                <h4>Trois rideaux</h4>
+                                                <hr>
+                                                <p>à partir de 12500 F</p>
+                                                <p>Livraison en <strong>EXPRESS 48H</strong></p>
+                                                <button type="button" class="btn btn-dark">Acheter</button>
+                                                <button type="button" class="btn btn-dark"data-bs-dismiss="modal">Annuler</button>
+                                                <hr>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-12">
+                <div class="card" style="width: 90%;height: 90%">
+                    <img src="images/rideau4.jpg" class="card-img-top" style="height: 50%;" data-aos="zoom-in-up"
+                    data-aos-duration="2500">
+                    <div class="card-body">
+                        <h5 class="card-title">Trois rideaux</h5>
+                        <p class="card-text">Des rideaux de qualite</p>
+                        <p class="mt-5">&#11088 &#11088 &#11088 &#11088 </p>
+                        <!-- <a href="#" class="btn btn-dark">Acheter</a> -->
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-dark mt-4" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal12">
+                            Acheter
+                        </button>
+    
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal12" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                                <img src="images/rideau4.jpg" alt="">
+                                            </div>
+                                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                                <h4>Trois rideaux</h4>
+                                                <hr>
+                                                <p>à partir de 12500 F</p>
+                                                <p>Livraison en <strong>EXPRESS 48H</strong></p>
+                                                <button type="button" class="btn btn-dark">Acheter</button>
+                                                <button type="button" class="btn btn-dark"data-bs-dismiss="modal">Annuler</button>
+                                                <hr>                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+
+
+    <section class="container-fluid plus-achetés">
+        <div class="container mt-5">
+            <div class="row" style="padding-top: 100px;">
+                <div class="col-lg-3 col-md-4 col-sm-12">
+                    <div class="card" style="width: 90%;">
+                        <img src="images/drap35.jpg" class="card-img-top"data-aos="zoom-in-up" data-aos-duration="2500"style="height: 30%";>
+                        <div class="card-body">
+                            <h5 class="card-title">Deux draps plus deux rideau</h5>
+                            <p class="card-text">Coton pure</p>
+                            <p>&#11088 &#11088 &#11088 &#11088 &#11088</p>
+                            <!-- <a href="#" class="btn btn-dark">Acheter</a> -->
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal1">
+                                Acheter
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <div class="col-lg-6 col-md-12 col-sm-12">
+                                                    <img src="images/drap35.jpg" alt="">
+                                                </div>
+                                                <div class="col-lg-6 col-md-12 col-sm-12">
+                                                    <h4>Deux draps plus deux rideau</h4>
+                                                    <hr>
+                                                    <p>à partir de 15000 F</p>
+                                                    <p>Livraison en <strong>EXPRESS 48H</strong></p>
+                                                    <button type="button" class="btn btn-dark">Acheter</button>
+                                                    <button type="button" class="btn btn-dark"
+                                                        data-bs-dismiss="modal">Annuler</button>
+                                                    <hr>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-12">
+                    <div class="card" style="width: 90%;">
+                        <img src="images/drap36.jpg" class="card-img-top"data-aos="zoom-in-up" data-aos-duration="2500" style="height: 30%";>
+                        <div class="card-body">
+                            <h5 class="card-title">Deux draps plus deux rideau</h5>
+                            <p class="card-text">Coton pure</p>
+                            <p>&#11088 &#11088 &#11088 &#11088</p>
+                            <!-- <a href="#" class="btn btn-dark">Acheter</a> -->
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal2">
+                                Acheter
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <div class="col-lg-6 col-md-12 col-sm-12">
+                                                    <img src="images/drap36.jpg" alt="">
+                                                </div>
+                                                <div class="col-lg-6 col-md-12 col-sm-12">
+                                                    <h4>Deux draps plus deux rideau</h4>
+                                                    <hr>
+                                                    <p>à partir de 15 000 F</p>
+                                                    <p>Livraison en <strong>EXPRESS 48H</strong></p>
+                                                    <button type="button" class="btn btn-dark">Acheter</button>
+                                                    <button type="button" class="btn btn-dark"
+                                                        data-bs-dismiss="modal">Annuler</button>
+                                                    <hr>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-12">
+                    <div class="card" style="width: 90%;">
+                        <img src="images/drap41.jpg" class="card-img-top"data-aos="zoom-in-up" data-aos-duration="2500">
+                        <div class="card-body">
+                            <h5 class="card-title">Deux draps plus deux rideau</h5>
+                            <p class="card-text">Coton pure</p>
+                            <p>&#11088 &#11088 &#11088 </p>
+                            <!-- <a href="#" class="btn btn-dark">Acheter</a> -->
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal3">
+                                Acheter
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <div class="col-lg-6 col-md-12 col-sm-12">
+                                                    <img src="images/drap41.jpg" alt="">
+                                                </div>
+                                                <div class="col-lg-6 col-md-12 col-sm-12">
+                                                    <h4>Deux draps plus deux rideau</h4>
+                                                    <hr>
+                                                    <p>à partir de 15 000 F</p>
+                                                    <p>Livraison en <strong>EXPRESS 48H</strong></p>
+                                                    <button type="button" class="btn btn-dark">Acheter</button>
+                                                    <button type="button" class="btn btn-dark"
+                                                        data-bs-dismiss="modal">Annuler</button>
+                                                    <hr>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-12">
+                    <div class="card" style="width: 90%;">
+                        <img src="images/drap42.jpg" class="card-img-top"data-aos="zoom-in-up" data-aos-duration="2500">
+                        <div class="card-body">
+                            <h5 class="card-title">Deux draps plus deux rideau</h5>
+                            <p class="card-text">Coton pure</p>
+                            <p>&#11088 &#11088 </p>
+                            <!-- <a href="#" class="btn btn-dark">Acheter</a> -->
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal4">
+                                Acheter
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <div class="col-lg-6 col-md-12 col-sm-12">
+                                                    <img src="images/drap42.jpg" alt="">
+                                                </div>
+                                                <div class="col-lg-6 col-md-12 col-sm-12">
+                                                    <h4>Deux draps plus deux rideau</h4>
+                                                    <hr>
+                                                    <p>à partir de 15 000 F</p>
+                                                    <p>Livraison en <strong>EXPRESS 48H</strong></p>
+                                                    <button type="button" class="btn btn-dark">Acheter</button>
+                                                    <button type="button" class="btn btn-dark"
+                                                        data-bs-dismiss="modal">Annuler</button>
+                                                    <hr>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+ <!-- ....................... -->
+
+    <!-- footer -->
+    <div class="container-fluid bg-dark text-white footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <ul class="list-unstyled d-flex">
+                        <li>
+                            <a href="nouvel-arrivage.html"><i class="fab fa-instagram text-white"></i></a>
+                        </li>
+                        <li>
+                            <a href="nouvel-arrivage.html"><i class="fab fa-twitter text-white"></i></a>
+                        </li>
+                        <li>
+                            <a href="nouvel-arrivage.html"><i class="fab fa-facebook text-white"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="copyright-text text-center mb-3 mb-lg-0">
+                        <p class="mb-0 ">Copyright &copy; 2023 <a class="text-white" href="index.html">Massaer</a>.
+                            Tous droits
+                            réservés.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

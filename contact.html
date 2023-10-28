@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maaasss Business</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- Bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- Fontawesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark position-fixed">
+            <div class="container-fluid">
+                <a class="navbar-brand " href="index.html"><img class="bg-light rounded-circle" src="images/logo.png" alt="logo" width="80" height="70"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-3 mb-lg-0 ">
+                        <li class="nav-item">
+                            <a class="nav-link active  text-light" aria-current="page" href="./index.html">Acceuil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="produit.html">Produits</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Types de produits
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./produit.html">"DRAPS 4 PIECES"</a></li>
+                                <li><a class="dropdown-item" href="./produit.html">"TROIS RIDEAUX PLUS DRAP velours"</a></li>
+                                <li><a class="dropdown-item" href="./produit.html">"DRAP TAMPON"</a></li>
+                                <li>
+                                  <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="./produit.html">"DRAPS 6 PIECES PLUS DEUX RIDEAUX"</a></li>
+                              </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  text-light" href="./plus-achetés.html"> plus-achetés</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  text-light" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  text-light" href="./connexion.html">Connexion</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link text-light" href="./produit.html"><i class="fas fa-shopping-cart"></i></a>
+                        </li> -->
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2 " type="search" placeholder="Recherche..." aria-label="Search">
+                        <!-- <button class="btn btn-outline-dark" type="submit">Recherche</button> -->
+                        <a class="nav-link text-light pt-2 ms-1" href="./produit.html"><i class="fas fa-shopping-cart"></i></a>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Formulaie de contact -->
+    <!-- Contact-->
+    <section class="page-section pb-5" id="contact">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text- my-5">Contactez-Nous</h2>              
+            </div>
+            
+            <form id="contactForm" >
+                <div class="row align-items-stretch mb-5">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <!-- Name input-->
+                            <input class="form-control" id="name" type="text" placeholder="Your Name *"/>
+                            <div class="invalid-feedback">A name is required.</div>
+                        </div>
+                        <div class="form-group">
+                            <!-- Email address input-->
+                            <input class="form-control" id="email" type="email" placeholder="Your Email *"/>
+                            <div class="invalid-feedback">An email is required.</div>
+                            <div class="invalid-feedback">Email is not valid.</div>
+                        </div>
+                        <div class="form-group mb-md-0">
+                            <!-- Phone number input-->
+                            <input class="form-control" id="phone" type="tel" placeholder="Your Phone *"/>
+                            <div class="invalid-feedback">A phone number is required.</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group form-group-textarea mb-md-0">
+                            <!-- Message input-->
+                            <textarea class="form-control" id="message" placeholder="Your Message *"></textarea>
+                            <div class="invalid-feedback">A message is required.</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Submit Button-->
+                <div class="text-center"><button class="btn btn-xl text-uppercase" id="submitButton" type="submit">Send Message</button></div>
+            </form>
+        </div>
+    </section>
+    <!-- Fin Contact -->
+
+    <!-- footer -->
+    <div class="container-fluid bg-dark text-white footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <ul class="list-unstyled d-flex">
+                        <li>
+                            <a href="nouvel-arrivage.html"><i class="fab fa-instagram text-white"></i></a>
+                        </li>
+                        <li>
+                            <a href="nouvel-arrivage.html"><i class="fab fa-twitter text-white"></i></a>
+                        </li>
+                        <li>
+                            <a href="nouvel-arrivage.html"><i class="fab fa-facebook text-white"></i></a>
+                        </li>  
+                    </ul>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="copyright-text text-center mb-3 mb-lg-0">
+                        <p class="mb-0 ">Copyright &copy; 2023 <a class="text-white"
+                            href="index.html">Massaer</a>.
+                            Tous droits
+                            réservés.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+</html>

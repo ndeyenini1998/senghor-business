@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto+Slab&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-x: hidden;
+}
+/* Navbar */
+header .navbar{
+    z-index: 5;
+    width: 100%;
+}
+header .navbar .navbar-collapse ul{
+    margin-right: 120px;
+}
+header .navbar .navbar-collapse ul li{
+    margin: 10px;
+    font-size: 20px;
+    font-weight: 700;
+}
+header .navbar .navbar-collapse form{
+    margin-right: 30px;
+}
+header .navbar .navbar-collapse form input{
+    border-radius: 15px;
+}
+header .navbar .navbar-collapse form button{
+    border-radius: 15px;
+}
+
+/* banner */
+.banner{
+    background-color: #f29cf5; 
+    background-size: cover;
+    height: 100%;
+    padding-top: 5%;
+}
+.plus{
+    background-color: #f8dcf8; 
+    height:95vh;
+    
+}
+.bg-success{
+  background-color: #f8dcf8; 
+}
+
+.banner .description{
+    padding: 30px 20px;
+}
+.banner .description h1{
+    font-size: 40px;
+    font-weight: 600;
+}
+.banner .description h1 span{
+    color: gray;
+    font-size: 35px;
+    font-weight: 700;
+}
+.banner .description p{
+    font-size: 22px;
+}
+.banner .description a button{
+    width: 200px;
+    height: 40px;
+    margin-right: 20px;
+    margin-top: 20px;
+    border-radius: 15px;
+    font-weight: 500;
+    background-color: black;
+    color: white;
+}
+.banner .description a button:hover{
+    background-color: white;
+    color: black;
+    font-weight: 700;
+}
+.banner .div-rigth{
+    margin: auto;
+}
+.banner .div-rigth img{
+    width: 500px;
+    height: auto;
+}
+
+.banner .div-rigth .right_button{
+    /* margin-left: 100px;
+    margin-top: 15px; */
+    margin-top: 15px;
+    margin-left: 60px
+}
+.banner .div-rigth .right_button a{
+    color: black;
+}
+.banner .div-rigth .right_button a button{
+    width: 100px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 20px;
+    border-radius: 15px;
+    font-weight: 700;
+    padding: 5px;
+}
+.banner .div-rigth .right_button a button:hover{
+    background-color: black;
+    color: white;
+}
+
+button span{
+    color: green;
+    background-color: green;
+}
+
+
+/* footer */
+.footer{
+    margin-top: 0px;
+    padding-top: 20px;
+}
+
+.footer ul{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+.footer ul li{
+    margin-right: 40px;
+    font-size: 30px;
+}
+.footer ul li a{
+    color: black;
+}
+.footer ul li a:hover{
+    color: gray;
+}
+.footer .copyright-text{
+    font-size: 17px;
+    font-weight: 500;
+}
+.footer .copyright-text a{
+    text-decoration: none;
+    color: gray;
+    font-size: 20px;
+}
+.footer .copyright-text a:hover{
+    color: black;
+}
+
+/* Produits les plus achetés */
+.plus-achetés, .prod{
+   background-color: #f29cf5;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.plus-achetés .card{
+    margin-bottom: 15px;
+    margin-left: 20px;
+}
+/* .plus-achetés .card img{
+    height: 250px;
+} */
+.plus-achetés .card .btn-dark{
+    border-radius: 20px;
+}
+/* formuliare de contact */
+/* Contact */
+
+#contact {
+  background-color: #b353a4;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 100px;
+    padding-bottom: 20px;
+  }
+  
+  .section-subheading, .section-subheading.h3 {
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: italic;
+    
+    margin-bottom: 4rem;
+    color: #6c757d
+  }
+  .section-heading,.section-heading.h2 {
+    font-size: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+  .section-heading {
+    color: #fff;
+  }
+  .form-group {
+    margin-bottom: 24px;
+  }
+  .form-group input, .form-group textarea {
+    padding: 20px;
+  }
+  .form-control {
+    height: auto;
+    width: 10px;
+  }
+  .form-group-textarea {
+    height: 100%;
+  }
+  .form-group-textarea textarea {
+    height: 100%;
+    min-height: 10rem;
+  }
+  .form-control:focus {
+    border-color: #ffc800;
+    box-shadow: none;
+  }
+  #contactForm ::-webkit-input-placeholder {
+    font-weight: 700;
+    color: #ced4da;
+  }
+  #submitButton{
+    
+    background-color: white;
+    border-color: black;
+    margin-top: 20px;
+    margin-bottom: 0px;
+   
+  }
+  #conexion{
+    background-color: #e9c8e3;
+  }
+  #submitButton:hover{
+    background-color: white;
+    color: black;
+    font-weight: 700;
+  
+  }
+
+  /* connexion */
+  .container {
+    max-width: 100%;
+  }
+  
+  .col-sm-12 {
+    width: 100%;
+  }
+  
+  @media (min-width: 768px) {
+    .col-md-6 {
+      width: 50%;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .col-lg-6 {
+      width: 50%;
+    }
+  }
+  .form-control {
+    width: 100%;
+  }
+  
+  
+  
+  @media (min-width: 768px) {
+    .form-control {
+      width: 50%;
+    }
+  
+    .btn-primary {
+      width: 25%;
+      margin-top: 0;
+     
+    }
+  }
+  .log-connexion, .log-inscription {
+    max-width: 100%;
+    height: auto;
+    margin-top: 2rem;
+  }
+
+  
+  @media (min-width: 768px) {
+    .log-connexion {
+      max-width: 50%;
+      margin-top: 0;
+    }
+   
+  }
+    
+/* fin connexion   */
+
+/* inscription */
+
+
+.modal-dialog img {
+    width: 200px;
+}
+
+@media (max-width: 500px) {
+    .modal-dialog img {
+        width: 300px;
+        margin-left: 10px;
+    }
+    
+}
+.imag{
+  height: 50%;
+}
