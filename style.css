@@ -11,6 +11,12 @@ header .navbar{
     z-index: 5;
     width: 100%;
 }
+.navbar{
+  background-color: #6c757d;
+}
+.contact_button{
+  background-color: #6c757d;
+}
 header .navbar .navbar-collapse ul{
     margin-right: 120px;
 }
