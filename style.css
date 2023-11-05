@@ -34,16 +34,16 @@ header .navbar .navbar-collapse form button{
     background-color: #f29cf5; 
     background-size: cover;
     height: 100%;
-    padding-top: 5%;
+    /* padding-top: 5%; */
 }
 .plus{
     background-color: #f8dcf8; 
-    height:185%;
+    /* height:50%; */
     
 }
 .plus-1{
   background-color: #f8dcf8; 
-  height:100%;
+  /* height:100%; */
   
 }
 .bg-success{
@@ -112,8 +112,8 @@ header .navbar .navbar-collapse form button{
 }
 
 button span{
-    color: green;
-    background-color: green;
+    color:#f8dcf8;
+    background-color: #f8dcf8;
 }
 
 
@@ -300,7 +300,9 @@ button span{
 .modal-dialog img {
     width: 200px;
 }
-
+.navbar-toggler{
+  background-color: #e9c8e3;
+}
 @media (max-width: 500px) {
     .modal-dialog img {
         width: 300px;
